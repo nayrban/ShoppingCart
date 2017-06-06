@@ -6,7 +6,7 @@ I need to refactor some code in the DTO project
 
 This projects runs on <strong>localhost:8080/</strong>
 
-Have one method here vi/customer/discount is a <strong>POST</strong> method
+Have one method here vi/customers/discount is a <strong>POST</strong> method
 
 Can use this json to test in tools like postman <br>
 <code>
