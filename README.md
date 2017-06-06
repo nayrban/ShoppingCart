@@ -4,10 +4,12 @@ https://examples.javacodegeeks.com/enterprise-java/jboss-drools-tutorial-beginne
 
 I need to refactor some code in the DTO project
 
-This projects runs on localhost:8080/
-Have one method here vi/customer/discount is a POST method
+This projects runs on <strong>localhost:8080/</strong>
 
-Can use this json to test in tools like postman
+Have one method here vi/customer/discount is a <strong>POST</strong> method
+
+Can use this json to test in tools like postman <br>
+<code>
 {"cart":
 	{"cartItems": 
 		[ 
@@ -18,4 +20,4 @@ Can use this json to test in tools like postman
 		"discount":0
 	}, 
 "coupon":"DISC01",
-"isNew":true }
+"isNew":true }</code>
