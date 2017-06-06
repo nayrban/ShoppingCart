@@ -1,7 +1,6 @@
 package com.shopping.cart.dto;
 
-public class CartItem {
-	private Cart cart;
+public class CartItem {	
 	private Product product;
 	private int qty;
 
@@ -9,8 +8,7 @@ public class CartItem {
 		
 	}
 	
-	public CartItem(Cart cart, Product product, int qty) {
-		this.cart = cart;
+	public CartItem(Product product, int qty) {		
 		this.product = product;
 		this.qty = qty;
 	}
@@ -31,8 +29,10 @@ public class CartItem {
 		this.qty = qty;
 	}
 
+	@Override
 	public String toString() {
-		return "CartItem [cart=" + cart + ", product=" + product + ", qty="
-				+ qty + "]";
+		return "CartItem [product=" + product + ", qty=" + qty + "]";
 	}
+	
+	
 }

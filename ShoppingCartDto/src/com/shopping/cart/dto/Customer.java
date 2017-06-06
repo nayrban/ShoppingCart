@@ -17,7 +17,7 @@ public class Customer {
 
 	public void addItem(Product product, int qty) {
 		if (cart == null) {
-			cart = new Cart(this);			
+			cart = new Cart();			
 		}
 		cart.addItem(product, qty);
 	}

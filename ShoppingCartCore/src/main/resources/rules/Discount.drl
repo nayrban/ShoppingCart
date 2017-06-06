@@ -4,7 +4,6 @@ import com.shopping.cart.dto.Customer;
 import com.shopping.cart.dto.Product;
 
 
-
 rule "If Coupon==DISC01, apply 5% discount"
 when
 $customer:Customer(coupon == "DISC01" )

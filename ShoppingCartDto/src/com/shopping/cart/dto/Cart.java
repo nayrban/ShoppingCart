@@ -3,21 +3,15 @@ package com.shopping.cart.dto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cart {
-	private Customer customer;
+public class Cart {	
 	private List<CartItem> cartItems = new ArrayList<>();
 	private double discount;
 
 	public Cart(){
-		
 	}
 	
-	public Cart(Customer customer) {
-		this.customer = customer;
-	}
-
 	public void addItem(Product p, int qty) {
-		CartItem cartItem = new CartItem(this, p, qty);
+		CartItem cartItem = new CartItem(p, qty);
 		cartItems.add(cartItem);
 	}
 
@@ -37,10 +31,6 @@ public class Cart {
 		return total;
 	}
 
-	public Customer getCustomer() {
-		return customer;
-	}
-
 	public void setCartItems(List<CartItem> cartItems) {
 		this.cartItems = cartItems;
 	}
@@ -49,18 +39,13 @@ public class Cart {
 		return cartItems;
 	}
 
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
-	}
-
 	public int getFinalPrice() {
 		return getTotalPrice() - (int) getDiscount();
 	}
 
 	@Override
 	public String toString() {
-		return "Cart [customer=" + customer + ", cartItems=" + cartItems
-				+ ", discount=" + discount + "]";
+		return "Cart [cartItems=" + cartItems + ", discount=" + discount + "]";
 	}
 
 }
