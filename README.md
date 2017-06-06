@@ -29,4 +29,11 @@ You can edit the rule using different amounts or adding more rules.
 In those two basic rules we have two scenarios,
 First if  the user have a discount coupon we apply a % and the other one is if the user are new. A user can get both rules at same time.
 
-Feel  free and change any code and create a new pull request</p>
+Feel  free and change any code and create a new pull request.
+
+This project is a mix that include the first link, and those others.
+<br>
+https://github.com/gratiartis/buspass-ws
+<br>
+https://examples.javacodegeeks.com/enterprise-java/jboss-drools/drools-decision-table-example/
+</p>
