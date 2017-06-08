@@ -7,7 +7,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<kie.version>6.5.0.Final</kie.version>
+		<kie.version>6.5.0.Final</kie.version>		
 		<src.dir>src/main/java</src.dir>
 	</properties>
 
@@ -45,9 +45,38 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-compiler</artifactId>
+			<version>${kie.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-core</artifactId>
+			<version>${kie.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.kie.server</groupId>
+			<artifactId>kie-server-api</artifactId>
+			<version>${kie.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.kie.server</groupId>
+			<artifactId>kie-server-client</artifactId>
+			<version>${kie.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>ShoppingCartDto</groupId>
 			<artifactId>ShoppingCartDto</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.gpshiring.shoppingcart</groupId>
+			<artifactId>ShoppingCart</artifactId>
+			<version>1.0.0</version>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 	<build>

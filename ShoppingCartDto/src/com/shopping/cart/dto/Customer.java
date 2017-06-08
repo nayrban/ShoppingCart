@@ -1,6 +1,12 @@
 package com.shopping.cart.dto;
 
-public class Customer {
+import java.io.Serializable;
+
+public class Customer implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Cart cart;
 	private String coupon;
 	private boolean isNew;

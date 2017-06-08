@@ -3,17 +3,16 @@ package com.shopping.cart.core;
 import com.shopping.cart.dto.Customer;
 import com.shopping.cart.dto.Product;
 
-
 rule "If Coupon==DISC01, apply 5% discount"
 when
-$customer:Customer(coupon == "DISC01" )
+customer:Customer(coupon == "DISC01" )
 then
-$customer.getCart().addDiscount(((double)$customer.getCart().getTotalPrice())*0.05d);
+customer.getCart().addDiscount((customer.getCart().getTotalPrice())*0.05d);
 end
 
 rule "If consumer is new, apply 2% discount"
 when
-$customer:Customer($customer.getIsNew())
+customer:Customer(customer.getIsNew())
 then
-$customer.getCart().addDiscount(((double)$customer.getCart().getTotalPrice())*0.02d);
+customer.getCart().addDiscount((customer.getCart().getTotalPrice())*0.02d);
 end

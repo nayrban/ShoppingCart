@@ -15,8 +15,8 @@ import com.shopping.cart.dto.Customer;
 @Service
 public class DiscountService {
 
-	private KieContainer kieContainer;
-
+	private KieContainer kieContainer;	
+	
 	@Autowired
 	public DiscountService(KieContainer kieContainer) {
 		this.kieContainer = kieContainer;
@@ -24,7 +24,7 @@ public class DiscountService {
 
 	public Customer getDiscount(Customer customer) {
 		KieSession kieSession = kieContainer
-				.newKieSession("ksession-shopping-cart");
+				.newKieSession("ksession-shopping-cart-2");
 		kieSession.insert(customer);
 		kieSession.fireAllRules();
 		// Customer customer2 = getDiscount(kieSession);
